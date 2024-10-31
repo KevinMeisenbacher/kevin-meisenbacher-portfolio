@@ -1,0 +1,35 @@
+@use '../../partials/_variables' as *;
+@use '../../partials/_fonts' as *;
+@use '../../partials/_mixins' as *;
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient($black, $darkBlue);
+}
+
+.profile {
+    width: 80%;
+}
+
+.story {
+    @include uhd { font-size: 2em }
+}
+
+.section {
+    width: 100%;
+}
+
+h3 {
+    font-family: 'Audiowide';
+    color: $lightBlue;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}

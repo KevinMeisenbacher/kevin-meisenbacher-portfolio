@@ -1,0 +1,19 @@
+@use '../../partials/_variables' as *;
+@use '../../partials/_fonts' as *;
+@use '../../partials/_mixins' as *;
+
+footer {
+    background-color: $darkBlue;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & img {
+        margin-left: 20px;
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
