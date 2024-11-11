@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Header.scss';
-import Burger from './Burger';
+import Burger from '../Burger/Burger';
 
 const Header = () => {
     return <header>

@@ -8,7 +8,7 @@ const ProjectsPage = () => {
                 <article className='project'>
                     <a href='https://www.youtube.com/watch?v=5c70b4oBcgg'>
                         <h2>Music Buddy</h2>
-                        <iframe src='https://www.youtube.com/embed/5c70b4oBcgg?si=lyAi7Qxep-3CFdFY' />
+                        <iframe src='https://www.youtube.com/embed/5c70b4oBcgg?si=lyAi7Qxep-3CFdFY' title='video' />
                     </a>
                 </article>
                 <article className='project'>
