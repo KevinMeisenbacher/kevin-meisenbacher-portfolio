@@ -4,7 +4,7 @@ const ProjectsPage = () => {
     return (
         <main className='projects'>
             <h2 className='title'>Projects</h2>
-                <section className='projects-list'>
+            <section className='projects-list'>
                 <article className='project'>
                     <a href='https://www.youtube.com/watch?v=5c70b4oBcgg'>
                         <h2>Music Buddy</h2>

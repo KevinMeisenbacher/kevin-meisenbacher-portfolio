@@ -2,21 +2,13 @@
 @use '../../partials/_fonts' as *;
 @use '../../partials/_mixins' as *;
 
-.title {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 25px;
-    background: linear-gradient($black, $darkBlue);
-}
-
 .profile {
-    width: 80%;
+    width: 100%;
+    @include laptop { width: 80%; }
 }
 
 .story {
+    @include laptop { margin: 0; }
     @include uhd { font-size: 2em }
 }
 
@@ -32,4 +24,12 @@ h3 {
 .skills {
     display: flex;
     justify-content: space-around;
+    overflow: auto;
+
+    &-column, p, h3 { 
+        min-width: 150px; 
+        font-size: 1rem;
+    }
+
+    h3 { overflow: auto; }
 }

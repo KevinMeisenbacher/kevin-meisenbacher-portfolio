@@ -18,14 +18,12 @@ const ContactPage = () => {
     return (
         <form className="contact" ref={emailForm} onSubmit={handleForm}>
             <div className="email-headers">
-                <label>Name</label>
-                <input type="text" name="from_name" />
                 <input type="hidden" name="to_name" value="Kevin" />
-                <label>Email</label>
-                <input type="email" name="user_email" />
+                <span><label>From</label>
+                <input type="email" name="user_email" /></span>
+                <span><label>Subject</label>
+                <input name="subject" /></span>
             </div>
-            <span><label>Subject</label>
-            <input name="subject" /></span>
             <span><label>Message</label>
             <textarea name="message" /></span>
             <button>Send</button>

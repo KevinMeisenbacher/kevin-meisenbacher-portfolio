@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Header.scss';
+import Burger from './Burger';
 
 const Header = () => {
     return <header>
@@ -12,6 +13,7 @@ const Header = () => {
             <Link to='/projects'>Projects</Link>
             <Link to='/contact'>Contact</Link>
         </div>
+        <Burger />
     </header>
 }
 

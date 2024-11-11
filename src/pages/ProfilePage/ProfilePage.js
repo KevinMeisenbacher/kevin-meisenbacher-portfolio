@@ -4,9 +4,9 @@ const ProfilePage = () => {
     return (
         <main className='profile'>
             <section className='section'>
-                <p className='story'>Passion for improving lives with high quality software <br />
-                Brings out everyone's unique strengths <br />
-                Careful to achieve reliable results for an infinitely unique user base</p>
+                <p className='story'>Passion for improving lives with high quality software </p>
+                <p className='story'>Brings out everyone's unique strengths </p>
+                <p className='story'>Careful to achieve reliable results for an infinitely unique user base</p>
             </section>
             <section className='section'>
                 <h2 className='title'>Skills</h2>

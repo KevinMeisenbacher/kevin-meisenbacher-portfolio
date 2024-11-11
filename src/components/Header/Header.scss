@@ -9,7 +9,16 @@ Header {
     align-items: center;
     justify-content: space-around;
     background-color: $darkBlue;
-    font-size: 24px;
+    font-size: .7rem;
+    @include tablet { font-size: 1.2rem; }
+    @include laptop { font-size: 1.5rem; }
+}
+
+.header-title { width: 60%; }
+
+.site-links {
+    display: none;
+    @include laptop { display: flex; }
 }
 
 a {

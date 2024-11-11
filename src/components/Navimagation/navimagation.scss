@@ -1,8 +1,12 @@
+@use '../../partials/_variables' as *;
+@use '../../partials/_fonts' as *;
+@use '../../partials/_mixins' as *;
+
 .page-nav {
     height: calc(100vh - 250px);
-    // width: 100%;
     opacity: .5;
-    display: flex;
+    display: none;
+    @include laptop { display: flex; }
     align-items: center;
     margin: 0;
 }
