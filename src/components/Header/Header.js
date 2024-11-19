@@ -1,8 +1,19 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './Header.scss';
-import Burger from '../Burger/Burger';
 
 const Header = () => {
+    const [show, setShow] = useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+       setShow(false);
+    }, [location.pathname])
+
+    const handleBurgerClick = () => {
+        setShow(!show);
+    }
+
     return <header>
         <div className='header-title'>
             <h1>Kevin Meisenbacher</h1>
@@ -13,7 +24,17 @@ const Header = () => {
             <Link to='/projects'>Projects</Link>
             <Link to='/contact'>Contact</Link>
         </div>
-        <Burger />
+        <div className='burger__bun' onClick={() => handleBurgerClick()}>
+            <span className='burger__garnish'></span>
+            <span className='burger__garnish'></span>
+            <span className='burger__garnish'></span>
+        </div>
+        {show && <div className='burger__contents'>
+            <Link to='/'>Home</Link>
+            <Link to='/profile'>Profile</Link>
+            <Link to='/projects'>Projects</Link>
+            <Link to='/contact'>Contact</Link>
+        </div>}
     </header>
 }
 
