@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './Header.scss';
+import resume from '../../assets/Kevin_Meisenbacher.pdf';
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -23,6 +24,7 @@ const Header = () => {
             <Link to='/profile'>Profile</Link>
             <Link to='/projects'>Projects</Link>
             <Link to='/contact'>Contact</Link>
+            <a href={resume} target='_blank'>Resume</a>
         </div>
         <div className='burger__bun' onClick={() => handleBurgerClick()}>
             <span className='burger__garnish'></span>
