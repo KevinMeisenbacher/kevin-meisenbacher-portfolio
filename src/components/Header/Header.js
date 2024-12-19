@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './Header.scss';
-import resume from '../../assets/Kevin_Meisenbacher.pdf';
+import resume from './assets/Kevin_Meisenbacher.pdf';
 
 const Header = () => {
     const [show, setShow] = useState(false);
