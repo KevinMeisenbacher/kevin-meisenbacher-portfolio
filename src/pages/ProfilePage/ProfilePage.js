@@ -12,12 +12,12 @@ const ProfilePage = () => {
                 <h2 className='title'>Skills</h2>
                 <article className='skills'>
                     <div className='skills-column'>
-                    <div className='skills-column'>
                         <h3>Programming</h3>
                         <p>JavaScript</p>
                         <p>TypeScript</p>
                         <p>C#</p>
                     </div>
+                    <div className='skills-column'>
                         <h3>Front End</h3>
                         <p>HTML5</p>
                         <p>CSS/SASS/TailwindCSS</p>
