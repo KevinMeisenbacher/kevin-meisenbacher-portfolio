@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './Header.scss';
 import resume from './Kevin_Meisenbacher.pdf';
+import photo from '../../assets/img/photo.jpg';
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -17,6 +18,7 @@ const Header = () => {
 
     return <header>
         <div className='header-title'>
+            <img src={photo} className='avatar__header' />
             <h1>Kevin Meisenbacher</h1>
         </div>
         <div className='site-links'>

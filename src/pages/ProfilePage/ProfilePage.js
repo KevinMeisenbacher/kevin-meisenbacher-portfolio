@@ -25,7 +25,6 @@ const ProfilePage = () => {
                         <p>Firebase</p>
                         <p>HTML5</p>
                         <p>CSS3</p>
-                        <p>SASS</p>
                     </div>
                     <div className='skills-column'>
                         <h3>Resources</h3>
@@ -33,10 +32,14 @@ const ProfilePage = () => {
                         <p>Node.js</p>
                         <p>Express.js</p>
                         <p>Knex</p>
+                        <p>SASS</p>
                         <p>TailwindCSS</p>
                         <p>ShadUI</p>
                         <p>RESTful APIs</p>
                         <p>Axios</p>
+                        <p>ASP.NET</p>
+                        <p>Windows Forms</p>
+                        <p>Maven</p>
                     </div>
                     <div className='skills-column'>
                         <h3>Workflow</h3>
@@ -45,6 +48,8 @@ const ProfilePage = () => {
                         <p>Heroku</p>
                         <p>Vercel</p>
                         <p>JIRA</p>
+                        <p>Slack</p>
+                        <p>Figma</p>
                         <p>Miro</p>
                         <p>Figjam</p>
                     </div>

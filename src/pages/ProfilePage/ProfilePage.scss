@@ -9,11 +9,12 @@
 
 .story {
     @include laptop { margin: 0; }
-    @include uhd { font-size: 2em }
+    @include desktop { font-size: 1.5em }
 }
 
 .section {
     width: 100%;
+    margin-bottom: 2em;
 }
 
 h3 {
